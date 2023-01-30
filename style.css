@@ -1,0 +1,240 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: #B71329;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color:  #FFFF;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-right: 45px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: #B71329;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+body{
+   background-color:#f8f8f8;
+}
+#home_section,#about_section,#skill_section,#contact_section,#work_section{
+    height: 130vh;
+    
+  }
+  .home-content,.about_section,.contact_section{
+
+    justify-content: space-evenly;
+    
+   
+  }
+
+  .home,.about,.work,.contact,.sk{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+ 
+  .home h1{
+    color: black;
+    font-size: 55px;
+    font-weight: 600;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+    font-family: Avenir;
+}
+ .home h1 span{
+    color: #B71329;
+    transition: all 0.3s ease;
+    font-size: 50px;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+    font-family: Avenir;
+}
+.home .home-content a{
+    display: inline-block;
+    background: #B71329;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 25px;
+    border: 2px solid #B71329;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: #B71329;
+    background: none;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:3rem 2rem;
+ }
+ 
+ .container .title{
+    font-size: 3.5rem;
+    color:#444;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+ }
+ 
+ .container .products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 2fr));
+    gap:2rem;
+ }
+ 
+ .container .products-container .product{
+    text-align: center;
+    padding:3rem 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(250, 7, 7, 0.1);
+    outline: .1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+ }
+ 
+ 
+ .container .products-container .product:hover{
+    outline: .2rem solid #B71329;
+    outline-offset: 0;
+ }
+ 
+ .container .products-container .product img{
+    height: 15rem;
+ }
+ 
+ .container .products-container .product:hover img{
+    transform: scale(.9);
+ }
+ 
+ .container .products-container .product h3{
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#B71329;
+ }
+  h3{
+    text-align: center;
+    padding:.5rem 0;
+    font-size: 2rem;
+    color:#B71329;
+ }
+ 
+ .container .products-container .product:hover h3{
+    color:#222;
+ }
+ 
+ .container .products-container .product .price{
+    font-size: 2rem;
+    color:rgb(7, 7, 7);
+ }
+.about ul li{
+font-size: 25px;
+}
+
+
+  .contact-info{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  
+  .card{
+    background: #0a0a0a;
+    padding: 0 120px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-icon{
+    font-size: 28px;
+    background: #B71329;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover .card-icon{
+    background: none;
+    color: #B71329;
+    transform: scale(1.6);
+  }
+  
+  .card p{
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .card:hover p{
+    max-height: 40px;
+    opacity: 1;
+  }
+  
+  
+  @media screen and (max-width:800px) {
+    .contact-info{
+      flex-direction: column;
+    }
+    .card{
+      width: 100%;
+      max-width: 300px;
+      margin: 10px 0;
+    }
+  }
+  
